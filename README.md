@@ -1,53 +1,51 @@
-# Next.js & HeroUI Template
+# Frontend Challenges Showcase 🚀
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+This is a **Next.js** project demonstrating solutions for a series of frontend and algorithm challenges.  
+Each challenge is displayed on a dedicated page with a small interactive experience to showcase the solution.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+## ✨ Challenges Included
 
-## Technologies Used
+1. **Find Duplicates**  
+   Find duplicate items in any given array.
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+2. **Exponencial Delay**  
+   Print each item in an array with exponentially increasing delays: 1s, 2s, 4s, 8s...
 
-## How to Use
+3. **Flexbox Layout**  
+   Recreate a figure layout using CSS Flexbox.
 
-### Use the template with create-next-app
+4. **Brackets Validator**  
+   Validate if brackets `{}`, `[]`, `()` in a string are properly opened and closed.
 
-To create a new project based on this template using `create-next-app`, run the following command:
+5. **Broken Egg**  
+   Determine the highest floor you can drop an egg without breaking it (with two eggs).
+
+6. **Zeno's Paradox**  
+   Animate the paradox of Achilles and the Tortoise.
+
+7. **Carrots Bag**  
+   Solve the fractional knapsack problem with unlimited carrots but limited bag capacity.
+
+{ text: "Find Duplicates", challengeNumber: 1 },
+{ text: "Exponencial Delay", challengeNumber: 2 },
+{ text: "Flex Layout", challengeNumber: 3 },
+{ text: "Brackets Validator", challengeNumber: 4 },
+{ text: "Broken Egg", challengeNumber: 5 },
+{ text: "Zeno's Paradox", challengeNumber: 6 },
+{ text: "Carrots Bag", challengeNumber: 7 },
+
+## 🧑‍💻 How to Run Locally
 
 ```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
+# 1. Clone the repository
+git clone https://github.com/yourusername/frontend-challenges-showcase.git
 
-### Install dependencies
+# 2. Navigate into the project
+cd frontend-challenges-showcase
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
+# 3. Install dependencies
 npm install
-```
 
-### Run the development server
-
-```bash
+# 4. Run the development server
 npm run dev
 ```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
