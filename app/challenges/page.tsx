@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Divider } from "@heroui/divider";
+import { BreadcrumbItem, Breadcrumbs } from "@heroui/breadcrumbs";
 
 import { title } from "@/components/primitives";
 
@@ -15,9 +16,13 @@ const challenges = [
   { text: "Carrots Bag", challengeNumber: 7 },
 ];
 
-export default function DocsPage() {
+export default function ChallengesPage() {
   return (
     <div className="w-full space-y-8">
+      <Breadcrumbs className="mb-8">
+        <BreadcrumbItem href="/">Home</BreadcrumbItem>
+        <BreadcrumbItem href="/challenges">Challenges</BreadcrumbItem>
+      </Breadcrumbs>
       <h1 className={title()}>Challenges</h1>
       <div className="flex flex-col gap-6">
         {challenges.map((challenge) => (
@@ -25,12 +30,6 @@ export default function DocsPage() {
             key={challenge.challengeNumber}
             href={`/challenges/${challenge.challengeNumber}`}
           >
-            {/* <Card className="flex-1 h-40">
-              <CardBody className="flex justify-center items-center">
-                <p className="text-5xl bold">{challenge.challengeNumber}</p>
-                challenge
-              </CardBody>
-            </Card> */}
             <div className="flex justify-between">
               <p className="text-2xl bold p-2">{challenge.challengeNumber}.</p>
               <p className="text-2xl bold p-2">{challenge.text}</p>

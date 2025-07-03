@@ -1,6 +1,7 @@
 "use client";
 
 import { Tabs, Tab } from "@heroui/tabs";
+import { BreadcrumbItem, Breadcrumbs } from "@heroui/breadcrumbs";
 
 import { subtitle, title } from "@/components/primitives";
 
@@ -44,6 +45,11 @@ export default function DocsPage() {
 
   return (
     <div className="w-full space-y-8">
+      <Breadcrumbs className="mb-8">
+        <BreadcrumbItem href="/">Home</BreadcrumbItem>
+        <BreadcrumbItem href="/challenges">Challenges</BreadcrumbItem>
+        <BreadcrumbItem>Challenge 3</BreadcrumbItem>
+      </Breadcrumbs>
       <h1 className={title()}>Challenge 3</h1>
       <p className={subtitle()}>
         Write the necessary React code for generating the figure (using flex).
