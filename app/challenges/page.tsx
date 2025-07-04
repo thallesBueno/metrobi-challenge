@@ -24,15 +24,16 @@ export default function ChallengesPage() {
         <BreadcrumbItem href="/challenges">Challenges</BreadcrumbItem>
       </Breadcrumbs>
       <h1 className={title()}>Challenges</h1>
-      <div className="flex flex-col gap-6">
+      <div className="">
         {challenges.map((challenge) => (
           <Link
             key={challenge.challengeNumber}
+            className="hover:bg-neutral-900 active:bg-neutral-800 transition-background duration-300 "
             href={`/challenges/${challenge.challengeNumber}`}
           >
-            <div className="flex justify-between">
-              <p className="text-2xl bold p-2">{challenge.challengeNumber}.</p>
-              <p className="text-2xl bold p-2">{challenge.text}</p>
+            <div className="flex justify-between p-2 py-6">
+              <p className="text-xl">{challenge.challengeNumber}.</p>
+              <p className="text-xl">{challenge.text}</p>
             </div>
             <Divider />
           </Link>

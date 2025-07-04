@@ -8,7 +8,7 @@ import NextLink from "next/link";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { GithubIcon } from "@/components/icons";
+import { GithubIcon, LinkedinIcon } from "@/components/icons";
 
 export const Navbar = () => {
   return (
@@ -26,6 +26,9 @@ export const Navbar = () => {
       <NavbarContent className="basis-1 pl-4" justify="end">
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
+        </Link>
+        <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
+          <LinkedinIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
       </NavbarContent>
